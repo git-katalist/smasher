@@ -1,7 +1,5 @@
 import image from "../../public/pic1.png";
-// import Image from "next/image";
-
-const prefix = process.env.BACKEND_URL;
+import Image from "next/image";
 
 // NOTES //
 const Title = () => {
@@ -12,8 +10,15 @@ const Excerpt = () => {
 };
 
 // NOTES //
-const Image = () => {
-    return <img src={prefix + image} alt="" />;
+const Img = () => {
+    return (
+        <Image
+            src={process.env.pathPrefix + image}
+            width="373"
+            height="245"
+            alt=""
+        />
+    );
 };
 
 // NOTES //
@@ -25,4 +30,4 @@ const Showcase = () => {
     );
 };
 
-export { Title, Excerpt, Showcase, Image };
+export { Title, Excerpt, Showcase, Img };
