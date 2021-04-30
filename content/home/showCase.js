@@ -11,14 +11,7 @@ const Excerpt = () => {
 
 // NOTES //
 const Img = () => {
-    return (
-        <Image
-            src={process.env.pathPrefix + image}
-            width="373"
-            height="245"
-            alt=""
-        />
-    );
+    return <Image src={image} width="373" height="245" alt="" />;
 };
 
 // NOTES //
