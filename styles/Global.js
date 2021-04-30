@@ -12,4 +12,9 @@ html{
     font-family: 'Nunito', sans-serif;
 }
 
+body{
+    background-color: teal;
+    color: white;
+}
+
 `;
